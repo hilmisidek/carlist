@@ -13,7 +13,7 @@ namespace carlist
         {
             String harga = "RM000";
             
-            IWebDriver driver = new ChromeDriver("C:\\Drivers");
+            IWebDriver driver = new ChromeDriver("C:\\Driver");
             driver.Url = "https://carlist.my/"; // This will open up the URL
             driver.FindElement(By.XPath("//form/div/div/div")).Click(); //click on dropdown list
             driver.FindElement(By.XPath("//div[contains(@data-value,'used')]")).Click(); //select "used"
